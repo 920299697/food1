@@ -45,26 +45,10 @@
         </div>
 
         <div class="form-group">
-            <label>是否保标记</label>
-            <select name="bao" class="form-control">
-                <option value="1" {{$shop->bao?'selected':''}}>是</option>
-                <option value="0" {{$shop->bao?'':'selected'}}>否</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label>是否票标记</label>
-            <select name="piao" class="form-control">
-                <option value="1" {{$shop->piao?'selected':''}}>是</option>
-                <option value="0" {{$shop->piao?'':'selected'}}>否</option>
-            </select>
-        </div>
-
-        <div class="form-group">
-            <label>是否准标记</label>
-            <select name="zhun" class="form-control">
-                <option value="1" {{$shop->zhun?'selected':''}}>是</option>
-                <option value="0" {{$shop->zhun?'':'selected'}}>否</option>
-            </select>
+            <input type="checkbox" value="1" name="niao" {{$shop->niao?'checked':''}}>蜂鸟
+            <input type="checkbox" value="1" name="bao" {{$shop->bao?'checked':''}}>保
+            <input type="checkbox" value="1" name="piao" {{$shop->piao?'checked':''}}>票
+            <input type="checkbox" value="1" name="zhun" {{$shop->zhun?'checked':''}}>准
         </div>
 
         <div class="form-group">

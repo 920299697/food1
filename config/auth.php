@@ -40,6 +40,15 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        //添加一个guards
+        'admin'=>[
+          'driver'=>'session',
+          'provider'=>'users',//数据提示者
+        ],
+        'user'=>[
+            'driver'=>'session',
+            'provider'=>'users',//数据提示者
+        ],
 
         'api' => [
             'driver' => 'token',
@@ -65,9 +74,20 @@ return [
     */
 
     'providers' => [
-        'users' => [
+        'user' => [
             'driver' => 'eloquent',
             'model' => App\User::class,
+        ],
+
+        //提供商户登录
+        'users' => [
+            'driver' => 'eloquent',
+            'model' => \App\Models\Users::class,
+        ],
+        //提供平台登录
+        'admins' => [
+            'driver' => 'eloquent',
+            'model' => \App\Models\Admin::class,
         ],
 
         // 'users' => [
