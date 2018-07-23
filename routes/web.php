@@ -33,7 +33,7 @@ Route::domain('admin.food.com')->namespace('Admin')->group(function () {
 
 
 //商户
-Route::domain('shop.food.com')->namespace('Admin')->group(function () {
+Route::domain('shop.food.com')->namespace('Shop')->group(function () {
     //商家
     Route::any('Users/reg',"UsersController@reg")->name('Users.reg');
     Route::any('Users/login',"UsersController@login")->name('Users.login');

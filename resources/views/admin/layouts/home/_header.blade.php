@@ -36,7 +36,7 @@
             </form>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="{{route('Users.login')}}">登录</a></li>
-                        @auth("admin")
+                        @auth
                     <li class="dropdown">
                         {{--<img src="" alt="">--}}
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -51,7 +51,7 @@
                         </ul>
                     </li>
                         @endauth
-                        @guest("admin")
+                        @guest
 
                     <li class="dropdown">
                         <a href="{{route('Users.reg')}}">注册</a>
