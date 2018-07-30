@@ -163,6 +163,8 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Overtrue\LaravelUEditor\UEditorServiceProvider::class,
+        Mrgoon\AliSms\ServiceProvider::class,
 
         /*
          * Package Service Providers...

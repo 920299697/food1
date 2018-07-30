@@ -36,7 +36,7 @@
                         <td>{{$menu->money}}</td>
                         <td>{{$menu->description}}</td>
                         <td>{{$menu->month_sales}}</td>
-                        <td><img src="/uploads/{{$menu->menu_img}}" alt="图片加载失败" width="50" height="50"></td>
+                        <td><img src="{{$menu->menu_img}}" alt="图片加载失败" width="50" height="50"></td>
                         <td>{{$menu->status?'在售':'沽清'}}</td>
                         <td>
                             <a href="{{route('menu.edit',$menu)}}" class="btn btn-default">编辑</a>

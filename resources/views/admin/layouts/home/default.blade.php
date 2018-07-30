@@ -21,6 +21,7 @@
 
 <div class="container-fluid">
     @yield("content")
+    @include('vendor.ueditor.assets')
 </div>
 
 <script src="/bootstrap/js/jquery.min.js"></script>

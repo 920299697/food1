@@ -75,7 +75,7 @@ class UsersController extends Controller
         //判断提交方式
         if ($request->isMethod('post')) {
             //验证数据
-            if (Auth::attempt(['name' => $request->post('name'), 'password' => $request->password], $request->has('remember'))) {
+            if (Auth::attempt(['name' => $request->post('name'), 'password' => $request->password,], $request->has('remember'))) {
                 //提示
                 $request->session()->flash("success", "登录成功");
 //                $user=Auth::user();

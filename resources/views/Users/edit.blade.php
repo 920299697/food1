@@ -1,4 +1,4 @@
-@extends("admin.layouts..admin.default")
+@extends("admin.layouts.home.default")
 @section('title','修改密码')
 @section('content')
     <form method="post" enctype="multipart/form-data">

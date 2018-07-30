@@ -1,7 +1,6 @@
-<footer class="main-footer">
-    <div class="pull-right hidden-xs">
-        <b>Version</b> 2.4.0
+<footer class="footer navbar-fixed-bottom ">
+    <div class="container">
+        <hr>
+        <p class="text-center">多想遇见你，哪怕匆匆一眼就别离！ </p>
     </div>
-    <strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights
-    reserved.
 </footer>

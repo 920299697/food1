@@ -17,6 +17,15 @@ Route::get('/', function () {
 
 //平台
 Route::domain('admin.food.com')->namespace('Admin')->group(function () {
+
+    //管理员
+    Route::any('Admins/reg',"AdminsController@reg")->name('admins.reg');
+    Route::any('Admins/login',"AdminsController@login")->name('admins.login');
+    Route::get('Admins/logout',"AdminsController@logout")->name('admins.logout');
+    Route::any('Admins/index',"AdminsController@index")->name('admins.index');
+    Route::any('Admins/edit/{id}',"AdminsController@edit")->name('admins.edit');
+    Route::any('Admins/del/{id}',"AdminsController@del")->name('admins.del');
+
     //店铺分类
     Route::get('ShopCategory/index',"ShopCategoryController@index")->name('ShopCategory.index');
     Route::any('ShopCategory/add',"ShopCategoryController@add")->name('ShopCategory.add');
@@ -28,6 +37,12 @@ Route::domain('admin.food.com')->namespace('Admin')->group(function () {
     Route::any('Shop/add',"ShopController@add")->name('Shop.add');
     Route::any('Shop/edit/{id}',"ShopController@edit")->name('Shop.edit');
     Route::any('Shop/del/{id}',"ShopController@del")->name('Shop.del');
+
+    //活动管理
+    Route::get('Activity/index',"ActivityController@index")->name('activity.index');
+    Route::any('Activity/add',"ActivityController@add")->name('activity.add');
+    Route::any('Activity/edit/{id}',"ActivityController@edit")->name('activity.edit');
+    Route::any('Activity/del/{id}',"ActivityController@del")->name('activity.del');
 
 });
 
@@ -61,4 +76,6 @@ Route::domain('shop.food.com')->namespace('Shop')->group(function () {
     Route::any('Menu/login',"MenuController@login")->name('menu.login');
     Route::get('Menu/logout',"MenuController@logout")->name('menu.logout');
     Route::get('Menu/index',"MenuController@index")->name('menu.index');
+    Route::any('Menu/img',"MenuController@img")->name('menu.img');
 });
+

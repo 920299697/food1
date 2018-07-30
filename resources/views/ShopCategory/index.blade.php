@@ -15,7 +15,7 @@
             <tr>
                 <td>{{$shop->id}}</td>
                 <td>{{$shop->name}}</td>
-                <td><img src="/uploads/{{$shop->img}}" alt="图片加载失败" width="50" height="50"></td>
+                <td><img src="{{$shop->img}}" alt="图片加载失败" width="50" height="50"></td>
                 <td>{{$shop->status}}</td>
                 <td>
                     <a href="{{route('ShopCategory.edit',$shop)}}" class="btn btn-default">编辑</a>

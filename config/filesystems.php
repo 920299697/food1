@@ -67,6 +67,15 @@ return [
             'bucket' => env('AWS_BUCKET'),
         ],
 
+        'oss' => [
+            'driver'        => 'oss',
+            'access_id'     => env('ACCESS_ID'),
+            'access_key'    => env('ACCESS_KEY'),
+            'bucket'        => env('BUCKET'),
+            'endpoint'      => env('ENDPOINT'), // OSS 外网节点或自定义外部域名
+            'debug'         => false
+        ],
+
     ],
 
 ];
